@@ -1,7 +1,16 @@
 head.ready(function() {
 	console.log("These aren't the droids you're looking for!");
 
-	$(' .masonry ').masonry({
+	$('.js-fancybox').fancybox({
+		padding: 0,
+		helpers: {
+			overlay: {
+				locked: false
+			}
+		}
+	});
+
+	$(' .js-masonry ').masonry({
 		itemSelector: '.item',
 		singleMode: false,
 		isResizable: false
