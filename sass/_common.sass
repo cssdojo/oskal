@@ -57,6 +57,7 @@ section
 	+g(rgba(255,162,0,.46), rgba(255,162,0,0))
 	background-color: #ec1b24
 	+transition(background .1s ease-in)
+	+font-smoothing
 	&:hover
 		+g(#ffa100, rgba(255,162,0,0))
 		background-color: #f60
@@ -65,6 +66,18 @@ section
 		top: 3px
 		+box-shadow(0 1px 0 #790000)
 		+g(#ffa100, rgba(255,162,0,0))
+	&.btn_success
+		background-color: #427255
+		+g(rgba(73,194,108,.46), rgba(73,194,108,0))
+		+box-shadow(0 4px 0 #1e4147)
+		&:hover
+			background-color: #75c981
+			+g(#66ff92, rgba(73,194,108,0))
+		&:active
+			position: relative
+			top: 3px
+			+box-shadow(0 1px 0 #1e4147)
+			+g(#66ff92, rgba(73,194,108,0))
 
 .phone
 	+ibold
@@ -350,8 +363,85 @@ section
 		p
 			line-height: 1.4
 
+.overlay
+	position: fixed
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	background: rgba(#000, .6)
+	+gpu
+	z-index: -1
+	opacity: 0
+	+transition(all .2s ease-in)
+	&.is-active
+		opacity: 1
+		z-index: 1019
+
+.popup
+	position: fixed
+	width: 700px
+	height: 460px
+	left: 50%
+	top: 70px
+	margin-left: -350px
+	// margin-top: -230px
+	z-index: -1
+	opacity: 0
+	background-color: #f7f7f7
+	+transform(translate3d(0,-100%,0))
+	+transition(all .2s ease-in)
+	&.popup_mod
+		.popup__title
+			margin-bottom: 40px
+	&.is-active
+		opacity: 1
+		z-index: 1020
+		+transform(translate3d(0,0,0))
+	.popup__in
+		padding: 35px 120px 10px
+	.popup__title
+		+iblack
+		text-align: center
+		text-transform: uppercase
+		text-align: center
+		color: #5e6b77
+		font-size: 36px
+		+text-shadow(0 2px 0 rgba(26,68,95,.25))
+		line-height: 1
+		margin-bottom: 20px
+	p
+		text-align: center
+		margin-bottom: 25px
 
 
+.fancybox-wrap,
+.fancybox-overlay
+	+gpu
+
+.form
+	.form__row
+		margin-bottom: 18px
+	.form__submit
+		margin-top: 44px
+		text-align: center
+
+.input
+	display: block
+	width: 100%
+	+font-smoothing
+	color: #909ca6
+	font-family: 'Open Sans', Arial, sans-serif
+	font-size: 24px
+	font-style: italic
+	+placeholder-color(#919ca7)
+	color: #5e6b77
+	border: 2px solid #5e6b77
+	background-color: #f7f7f7
+	line-height: 34px
+	padding: 16px 22px
+	&:focus
+		+placeholder-color(transparent)
 
 
 

@@ -18,7 +18,7 @@
 			<div class="header__logo"></div>
 			<div class="header__right">
 				<p><a class="phone" href="tel:8-495-123-4567">8 (495) 123-45-67</a></p>
-				<p><a href="#" class="g-pseudo">Заказать звонок</a></p>
+				<p><a href="#" class="g-pseudo js-btn-call">Заказать звонок</a></p>
 			</div>
 		</div>
 	</header>
@@ -35,7 +35,7 @@
 		<!-- begin subscribe -->
 		<div class="subscribe">
 			<div class="subscribe__title">Бесплатное занятие</div>
-			<p><a class="btn" href="#">Получить</a></p>
+			<p><a class="btn js-btn-order" href="#">Получить</a></p>
 		</div>
 		<!-- end subscribe -->
 	</section>
@@ -132,7 +132,7 @@
 			<!-- begin subscribe -->
 			<div class="subscribe subscribe_mod">
 				<div class="subscribe__title">Бесплатное занятие</div>
-				<p><a class="btn" href="#">Получить</a></p>
+				<p><a class="btn js-btn-order" href="#">Получить</a></p>
 			</div>
 			<!-- end subscribe -->
 		</div>
@@ -203,7 +203,7 @@
 			<!-- begin subscribe -->
 			<div class="subscribe">
 				<div class="subscribe__title">Бесплатное занятие</div>
-				<p><a class="btn" href="#">Получить</a></p>
+				<p><a class="btn js-btn-order" href="#">Получить</a></p>
 			</div>
 			<!-- end subscribe -->
 		</div>
@@ -262,7 +262,7 @@
 			<!-- begin subscribe -->
 			<div class="subscribe subscribe_mod">
 				<div class="subscribe__title">Бесплатное занятие</div>
-				<p><a class="btn" href="#">Получить</a></p>
+				<p><a class="btn js-btn-order" href="#">Получить</a></p>
 			</div>
 			<!-- end subscribe -->
 		</div>
@@ -270,6 +270,45 @@
 	<!-- end footer -->
 </div>
 <!-- end out -->
+
+<div class="overlay"></div>
+<div class="popup popup_mod" data-popup="order">
+	<div class="popup__in">
+		<div class="popup__title">Бесплатное занятие</div>
+		<div class="form">
+			<form action="#">
+				<div class="form__row">
+					<input type="text" class="input" placeholder="Фамилия Имя">
+				</div>
+				<div class="form__row">
+					<input type="text" class="input" placeholder="Телефон">
+				</div>
+				<div class="form__submit">
+					<button type="submit" class="btn btn_success">Записаться</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<div class="popup"  data-popup="call">
+	<div class="popup__in">
+		<div class="popup__title">Обратный звонок</div>
+		<p>Наш менеджер свяжется с вами в ближайшее время</p>
+		<div class="form">
+			<form action="#">
+				<div class="form__row">
+					<input type="text" class="input" placeholder="Фамилия Имя">
+				</div>
+				<div class="form__row">
+					<input type="text" class="input" placeholder="Телефон">
+				</div>
+				<div class="form__submit">
+					<button type="submit" class="btn btn_success">Заказать</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
 
 <script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
 </body>
