@@ -44,7 +44,7 @@ section { position: relative; }
 .header { position: relative; z-index: 2; width: 860px; margin: 0 auto; }
 .header .header__in { position: absolute; left: 0; width: 100%; *zoom: 1; padding-top: 30px; }
 .header .header__in:after { content: " "; display: table; clear: both; }
-.header .header__logo { float: left; background: url('../img/icons-s605768d2b8.png') 0 0 no-repeat; width: 97px; height: 72px; font: 0/0 a; text-shadow: none; color: transparent; }
+.header .header__logo { float: left; background: url('../img/icons-sdb4cf5739c.png') 0 0 no-repeat; width: 97px; height: 72px; font: 0/0 a; text-shadow: none; color: transparent; }
 .header .header__right { float: right; margin-top: 20px; text-align: right; }
 
 .intro { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; background: #2b88b2 url(../img/header_bg.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; height: 530px; padding-top: 307px; font-size: 18px; color: white; text-transform: uppercase; text-align: center; }
@@ -61,7 +61,7 @@ section { position: relative; }
 .aspects .aspects__list { *zoom: 1; }
 .aspects .aspects__list:after { content: " "; display: table; clear: both; }
 .aspects .aspects__item { position: relative; float: left; width: 220px; margin-left: 80px; padding-top: 90px; text-align: center; }
-.aspects .aspects__item:before { position: absolute; top: 0; left: 50%; margin-left: -36px; background: url('../img/icons-s605768d2b8.png') 0 -82px no-repeat; width: 72px; height: 72px; content: ""; }
+.aspects .aspects__item:before { position: absolute; top: 0; left: 50%; margin-left: -36px; background: url('../img/icons-sdb4cf5739c.png') 0 -82px no-repeat; width: 72px; height: 72px; content: ""; }
 .aspects .aspects__item:first-child { margin-left: 0; }
 .aspects .aspects__item h2 { position: relative; font-size: 12px; color: #162a3d; text-transform: uppercase; margin-bottom: 16px; }
 .aspects .aspects__item h2:before { position: absolute; bottom: -9px; width: 95px; height: 1px; left: 50%; margin-left: -48px; background: red; content: ""; }
@@ -82,9 +82,25 @@ section { position: relative; }
 .questions .questions__item h2 { font-size: 18px; font-weight: bold; font-style: italic; }
 .questions .questions__item p { line-height: 1.6; }
 
-.testimonials { background: #6fb1dd; height: 553px; }
-
 .footer .container { position: relative; padding: 67px 0; }
 .footer p { margin-bottom: 0.9em; }
 .footer .phone { line-height: 1; }
 .footer .subscribe { top: 33px; right: 0; bottom: auto; left: auto; width: auto; }
+
+.testimonials { background: #6fb1dd; }
+.testimonials .container { padding: 103px 0; }
+.testimonials .testimonials__in { overflow: hidden; }
+.testimonials .testimonials__slide { position: relative; width: 100%; padding-bottom: 80px; }
+.testimonials .testimonials__pager { position: absolute; z-index: 1000; font-size: 30px; text-align: center; bottom: 0; left: 0; width: 100%; }
+.testimonials .testimonials__pager span { display: inline-block; cursor: pointer; background: url('../img/icons-sdb4cf5739c.png') 0 -368px no-repeat; width: 16px; height: 16px; font: 0/0 a; text-shadow: none; color: transparent; margin: 0 5px; }
+.testimonials .testimonials__pager span.is-active { background: url('../img/icons-sdb4cf5739c.png') 0 -164px no-repeat; width: 16px; height: 16px; }
+.testimonials .testimonials__prev, .testimonials .testimonials__next { position: absolute; top: 43px; cursor: pointer; z-index: 1000; }
+.testimonials .testimonials__prev { left: 0; background: url('../img/icons-sdb4cf5739c.png') 0 -279px no-repeat; width: 40px; height: 79px; }
+.testimonials .testimonials__next { right: 0; background: url('../img/icons-sdb4cf5739c.png') 0 -190px no-repeat; width: 40px; height: 79px; }
+
+.testimonial { text-align: center; color: white; padding: 0 100px; }
+.testimonial a { color: #1251c6; text-decoration: underline; }
+.testimonial a:hover { text-decoration: none; }
+.testimonial .testimonial__pic { display: block; margin: 0 0 20px; }
+.testimonial .testimonial__pic img { display: block; width: 154px; height: 154px; display: block; margin: 0 auto; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; }
+.testimonial .testimonial__info { font-style: italic; margin-bottom: 10px; }

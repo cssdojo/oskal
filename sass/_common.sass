@@ -224,11 +224,6 @@ section
 		p
 			line-height: 1.6
 
-.testimonials
-	background: #6fb1dd
-	height: 553px //tmp
-
-
 .footer
 	.container
 		position: relative
@@ -243,5 +238,79 @@ section
 		bottom: auto
 		left: auto
 		width: auto
+
+
+.testimonials
+	background: #6fb1dd
+	// height: 553px //tmp
+	.container
+		padding: 103px 0
+	.testimonials__slider
+	.testimonials__in
+		overflow: hidden
+	.testimonials__slide
+		position: relative
+		width: 100%
+		padding-bottom: 80px
+	.testimonials__pager
+		position: absolute
+		z-index: 1000
+		font-size: 30px
+		text-align: center
+		bottom: 0
+		left: 0
+		width: 100%
+		span
+			display: inline-block
+			cursor: pointer
+			+s(pager)
+			+hidetext
+			margin: 0 5px
+			&.is-active
+				+s(pager_a)
+	.testimonials__prev,
+	.testimonials__next
+		position: absolute
+		top: 43px
+		cursor: pointer
+		z-index: 1000
+	.testimonials__prev
+		left: 0
+		+s(prev)
+	.testimonials__next
+		right: 0
+		+s(next)
+
+.testimonial
+	text-align: center
+	color: #fff
+	padding: 0 100px
+	a
+		color: #1251c6
+		text-decoration: underline
+		&:hover
+			text-decoration: none
+	.testimonial__pic
+		display: block
+		margin: 0 0 20px
+		img
+			display: block
+			width: 154px
+			height: 154px
+			display: block
+			margin: 0 auto
+			+border-radius(50%)
+	.testimonial__info
+		font-style: italic
+		margin-bottom: 10px
+	.testimonial__text
+
+
+
+
+
+
+
+
 
 
