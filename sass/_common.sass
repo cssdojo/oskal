@@ -263,9 +263,10 @@ section
 		span
 			display: inline-block
 			cursor: pointer
+			margin: 0 5px
 			+s(pager)
 			+hidetext
-			margin: 0 5px
+			+nosel
 			&.is-active
 				+s(pager_a)
 	.testimonials__prev,
@@ -274,6 +275,7 @@ section
 		top: 43px
 		cursor: pointer
 		z-index: 1000
+		+nosel
 	.testimonials__prev
 		left: 0
 		+s(prev)
